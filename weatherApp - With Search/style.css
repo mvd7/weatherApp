@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(./assets/background.jpg);
+}
+
+.icon {
+  border-radius: 20px;
+}
+
+a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #f6f0f0;
+  transition: 0.3s;
+}
+
+a:hover {
+  transform: scale(140%);
+  color: #5100ff;
+}
+
+nav {
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  padding-top: 6%;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-container {
+  display: flex;
+}
+
+.left-side {
+  color: #072e67;
+  display: flex;
+  border-radius: 4% 0% 0% 4%;
+  background-color: rgba(255, 255, 255, 40%);
+  width: 320px;
+  height: 400px;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.location {
+  text-align: center;
+}
+
+.location > img {
+  transition: 0.3s;
+}
+
+.location > img:hover {
+  transform: scale(130%);
+}
+
+.left-side-content {
+  margin-left: 12%;
+}
+
+.right-side {
+  display: flex;
+  border-radius: 0% 4% 4% 0%;
+  background-color: #c4d0c6;
+  opacity: 90%;
+  width: 310px;
+  height: 400px;
+  flex-direction: column;
+}
+
+.line {
+  border: 1px solid rgba(255, 255, 255, 70%);
+}
+
+.right-side-content {
+  padding-left: 5%;
+  text-align: right;
+  display: flex;
+  margin-right: 3%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.day-card {
+  background-color: #8fa5b2;
+  box-sizing: border-box;
+  display: flex;
+  border-radius: 5%;
+  border: 2px solid black;
+  width: 120px;
+  height: 150px;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.day-card:hover {
+  transform: scale(95%);
+}
+
+.day-card-container {
+  width: 285px;
+  height: 160px;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.day-card > p {
+  line-height: 0.5px;
+  font-size: 0.65rem;
+}
+
+.right-side > h3 {
+  text-align: center;
+}
+
+.wind-speed {
+  color: rgb(30, 28, 28);
+}
+
+.min-temp {
+  color: blue;
+}
+
+.max-temp {
+  color: red;
+}
+
+.humidity {
+  color: rgb(1, 1, 70);
+}
+
+.about-container > h1 {
+  color: #c4d0c6;
+}
+
+.about-container > img {
+  border-radius: 50%;
+}
+
+.about-container > p {
+  color: #c4d0c6;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-side .line {
+  width: 100%;
+}
+
+.hourly-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: scroll;
+  overflow-y: hidden;
+  width: 800px;
+  height: 200px;
+}
+
+.hourly-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hourly-box > h1 {
+  padding: 30px;
+  color: #c4d0c6;
+}
+
+.clock {
+  color: red;
+}
+
+input {
+  height: 20px;
+  border-radius: 100px;
+  background-color: transparent;
+  color: whitesmoke;
+  transition: 0.3s;
+  border: 2px solid white;
+}
+
+.search > button {
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 11%;
+  border-radius: 80%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search > button:hover {
+  background-color: #8fa5b2;
+}
+
+.search {
+  position: relative;
+}
